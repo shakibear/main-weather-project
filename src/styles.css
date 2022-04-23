@@ -43,7 +43,7 @@ ul {
   color: rgb(32, 33, 36);
   font-size: 48px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 60px;
 }
 .weather-temperature .units {
   position: relative;
