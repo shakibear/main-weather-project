@@ -33,6 +33,8 @@ ul {
   font-size: 16px;
   font-weight: 400;
   text-align: right;
+}
+.dtw::first-letter {
   text-transform: capitalize;
 }
 .weather-temperature img {
