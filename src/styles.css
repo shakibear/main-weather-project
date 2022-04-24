@@ -12,6 +12,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
 .weather-app-wrapper {
   max-width: 700px;
   margin: 30px auto;
@@ -55,4 +58,11 @@ ul {
 }
 .search-button {
   max-width: 100px;
+}
+.weather-app .active {
+  color: rgb(32, 33, 36);
+  cursor: pointer;
+}
+.weather-app .active:hover {
+  text-decoration: none;
 }
