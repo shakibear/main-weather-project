@@ -66,3 +66,20 @@ a {
 .weather-app .active:hover {
   text-decoration: none;
 }
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.forecast-day {
+  color: rgb(32, 33, 36);
+  font-size: 16px;
+}
+.forecast-temperatures {
+  font-size: 13px;
+}
+.forecast-max {
+  color: rgb(32, 33, 36);
+}
+.forecast-min {
+  color: rgb(112, 117, 122);
+}
