@@ -33,6 +33,7 @@ ul {
   font-size: 16px;
   font-weight: 400;
   text-align: right;
+  text-transform: capitalize;
 }
 .weather-temperature img {
   margin-right: 10px;
