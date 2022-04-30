@@ -20,6 +20,28 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <div class="col-2">
+                <div class="forecast-day">${day}</div>
+                <img
+                  width="40px"
+                  src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png"
+                />
+                <div class="forecast-temperatures">
+                  <span class="forecast-max">28°</span
+                  ><span class="forecast-min"> 18°</span>
+                </div>
+              </div> `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -84,3 +106,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
 
 search("Tehran");
+displayForecast();
