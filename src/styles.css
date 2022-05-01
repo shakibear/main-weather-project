@@ -1,5 +1,6 @@
 body {
   font-family: "Google Sans", arial, sans-serif;
+  background: #f7f7f9;
 }
 h1 {
   color: rgb(32, 33, 36);
@@ -14,6 +15,10 @@ ul {
 }
 a {
   text-decoration: none;
+  color: #c82333;
+}
+a:hover {
+  color: #c82333;
 }
 .weather-app-wrapper {
   max-width: 600px;
@@ -23,6 +28,7 @@ a {
   padding: 20px;
   border: 1px solid #dadce0;
   border-radius: 5px;
+  background-color: white;
 }
 .phw {
   list-style: none;

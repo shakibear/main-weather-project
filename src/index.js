@@ -62,6 +62,7 @@ function getForecast(coordinates) {
   axios.get(apiUrl).then(displayForecast);
 }
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let conditionElement = document.querySelector("#condition");
@@ -69,9 +70,9 @@ function displayTemperature(response) {
   let speedElement = document.querySelector("#speed");
   let timeElement = document.querySelector("#time");
   let iconElement = document.querySelector("#icon");
-
+  let feelsLikeElement = document.querySelector("#feels-like");
   celsiusTemperature = response.data.main.temp;
-
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   conditionElement.innerHTML = response.data.weather[0].description;
